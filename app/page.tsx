@@ -9,7 +9,6 @@ import TrackingComponents from "@/components/TrackingComponent";
 import ImageGrid from "@/components/ImageGrid";
 import { Delete } from "@mui/icons-material";
 import ImageWrapper from "@/components/ImageWrapper";
-import Image from "next/image";
 
 const TrackingInterface: React.FC = () => {
   return (
