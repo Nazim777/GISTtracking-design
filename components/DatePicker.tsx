@@ -23,6 +23,10 @@ export default function DatePickerValue({label,date}:datePickerProps) {
           onChange={(newValue) => setValue(newValue)}
           sx={{
             backgroundColor: '#F4F4F5',
+            '& .MuiInputBase-root': {
+              height: '36px',
+            },
+            
           }}
         />
       </DemoContainer>

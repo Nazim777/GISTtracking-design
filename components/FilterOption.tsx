@@ -26,7 +26,7 @@ export default function FilterOptions() {
   ];
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, alignItems: 'center' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Time period buttons */}
       <Box sx={{ display: 'flex',  flexWrap: 'wrap', justifyContent: 'center', backgroundColor:'#F4F4F5' }}>
 

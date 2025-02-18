@@ -8,13 +8,13 @@ const TrackingComponent = () => {
   return (
     <Box>
       {/* Date Range Inputs */}
-      <Box sx={{ mb: 3 }}>
+      <Box sx={{ mb: 1 }}>
         <DatePicker label="Start" date="01-14-2025" />
         <DatePicker label="End" date="01-20-2025" />
       </Box>
 
       {/* Similarity Scale */}
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mb: 1 }}>
         <FilterOptions />
       </Box>
 
