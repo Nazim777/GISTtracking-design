@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, IconButton } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import WestIcon from "@mui/icons-material/West";
 import ButtonGroup from "@/components/ButtonGroup";
 import "ol/ol.css";
@@ -7,9 +7,8 @@ import MapComponent from "@/components/MapComponent";
 import Sidebar from "@/components/Sidebar";
 import TrackingComponents from "@/components/TrackingComponent";
 import ImageGrid from "@/components/ImageGrid";
-import { Delete } from "@mui/icons-material";
 import ImageWrapper from "@/components/ImageWrapper";
-
+import DeleteIconButton from "@/components/DeleteIconButton";
 const TrackingInterface: React.FC = () => {
   return (
     <Box
@@ -57,22 +56,8 @@ const TrackingInterface: React.FC = () => {
                   borderRadius: "4px",
                 }}
               >
-                <IconButton
-                  sx={{
-                    position: "absolute",
-                    right: 4,
-                    top: 4,
-                    padding: "2px",
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
-                    "&:hover": {
-                      backgroundColor: "rgba(0, 0, 0, 0.7)",
-                    },
-                    zIndex: 1,
-                  }}
-                  size="small"
-                >
-                  <Delete sx={{ fontSize: 16, color: "white" }} />
-                </IconButton>
+                <DeleteIconButton top={4}/>
+                <DeleteIconButton top={170}/>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   <img
                     src="/korean.jpg"
